@@ -67,12 +67,12 @@ describe("Getty api call", function() {
 }); 
 
 
-describe("...", function(){
+describe("Testing number of tweets", function(){
   it("should return without errors",function(done){
        twitter.doAllTwitterRequests(function(error, tweets) {
             console.log("tweets: " + tweets.length); 
             
-            expect(tweets.length).to.not.equal(0); 
+            expect(tweets.length).to.equal(15); 
             done(); 
         });
   }); 
