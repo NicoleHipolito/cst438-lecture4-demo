@@ -65,3 +65,15 @@ describe("Getty api call", function() {
     
     
 }); 
+
+
+describe("...", function(){
+  it("should return without errors",function(done){
+       twitter.doAllTwitterRequests(function(error, tweets) {
+            console.log("tweets: " + tweets.length); 
+            
+            expect(tweets.length).to.not.equal(0); 
+            done(); 
+        });
+  }); 
+});
